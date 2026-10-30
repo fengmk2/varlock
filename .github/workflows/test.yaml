@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build-and-test:
-    runs-on: depot-ubuntu-24.04-8
+    runs-on: ubuntu-latest
     outputs:
       includes-varlock: ${{ steps.check-release.outputs.includes-varlock }}
       release-packages: ${{ steps.check-release.outputs.packages }}
